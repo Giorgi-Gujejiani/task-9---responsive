@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+}
+
+.searchtag {
+    margin-right: 0 !important;
+}
+
+header {
+    /* margin: 0 130px; */
+    width: 86.5%;
+    margin: auto;
+}
+
+.margin_tag {
+    margin: 0 130px 0 130px;
+}
+
+#navigation {
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.logo {
+    flex: 1;
+}
+
+.menu {
+    flex: 1;
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+}
+
+.item {
+    list-style: none;
+}
+
+/* finished nav */
+
+/* ....................... */
+
+/* starts slide */
+
+.slide {
+    width: 86.5%;
+    margin: auto;
+    margin-top: 60px;
+    position: relative;
+    /* height: 27.5%; */
+    height: 613px;
+}
+
+.slide #image {
+    width: 100%;
+    height: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+.img_content {
+    width: 45%;
+    height: 50%;
+    position: absolute;
+    background-color: #FCFCFC;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+}
+
+.smalldiv {
+    width: 100%;
+    display: flex;
+}
+
+.smalldiv img {
+    width: 45px;
+}
+
+.title {
+    margin-top: 5%;
+    font-size: 30px;
+    color: #707070;
+}
+
+.gare {
+    margin-left: 3.5%;
+    margin-top: 3%;
+}
+
+.img_p {
+    font-size: 20px;
+    margin-top: 7%;
+}
+
+.arrow, .R_more {
+    margin-top: 7%;
+}
+
+.R_more {
+    margin-left: 2%;
+    color: #707070;
+}
+
+/* 
+slide finished */
+
+section {
+    margin-top: 140px;
+}
+
+.pop {
+    margin-bottom: 3%;
+    margin-top: 7%;
+    color: #707070;
+}
+
+.first_photo_section {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item1 {
+    justify-content: space-between;
+}
+
+main {
+    margin-top: 6% !important;
+    font-size: 30px;
+    color: #707070;
+}
+
+.nawili {
+    width: 30%;
+    border: 1px solid #707070;
+    padding: 0 2px 10px 2px;
+}
+
+.s_image {
+    /* width: 300px;
+    height: 200px; */
+    max-width: 100%;
+    height: auto;
+}
+
+.Second {
+    margin-top: 5%;
+}
+
+p, h6 {
+    color: #707070;
+}
+
+h6 {
+    margin-top: 3%;
+    float: right;
+}
+
+/* starts footer */
+
+footer {
+    background: #2E2E2E;
+    height: 207px;
+    width: 100% !important;
+    margin-top: 70px;
+}
+
+.footer_div {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    color: #FFFFFF;
+    width: 86.5%;
+    margin: auto;
+}
+
+.fb {
+    display: flex;
+}
+
+.fbb {
+    margin-right: 25px;
+}
+
+@media screen and (max-width: 977px) {
+    #navigation {
+        flex-wrap: wrap;
+    }
+    .logo {
+        flex: 1 0 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .menu {
+        flex: 1 0 100%;
+    }
+    .slide {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    /* footer handle  */
+    .footer_div {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+    }
+    footer {
+        height: auto;
+    }
+    .footer_div img {
+        margin-bottom: 20px;
+    }
+    .footer_div>div {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .footer_div>div:last-child {
+        margin-bottom: 0;
+    }
+    .footer_div .fb {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 695px) {
+    .title {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .slide {
+        height: 300px;
+    }
+    .slide #image {
+        height: auto;
+    }
+    .img_content {
+        width: 100%;
+    }
+    .img_content * {
+        margin: unset;
+    }
+    .img_content .title {
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+    .img_content .gare p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .img_content .smalldiv img {
+        margin-right: 20px;
+    }
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu>li {
+        margin-bottom: 20px;
+    }
+    .menu>li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .first_photo_section {
+        flex-wrap: wrap;
+    }
+    .nawili {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
